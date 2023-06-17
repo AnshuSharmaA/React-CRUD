@@ -43,8 +43,8 @@ const Home = () => {
                   <td>anshusharma1298@gmail.com</td>
                   <td>7007976332</td>
                   <td>
-                    <Link to="/edit">Edit</Link> |{" "}
-                    <Link to="/edit">Delete</Link>
+                    <Link to="/edit/record">Edit</Link> |{" "}
+                    <Link to="" onClick={()=>{alert('Are you sure you want to delete this Record!')}}>Delete</Link>
                   </td>
                 </tr>
               </tbody>

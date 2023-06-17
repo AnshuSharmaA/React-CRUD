@@ -4,7 +4,7 @@ import Footer from "../master/Footer";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import { Link } from "react-router-dom";
-const Add = () => {
+const Edit = () => {
   const initialValues = {
     name: "",
     email: "",
@@ -32,7 +32,7 @@ const Add = () => {
         <div className="row">
           <div className="col-sm-3"></div>
           <div className="col-sm-6 mt-3">
-            <h3 className="text-start mt-3">Add Records</h3>
+            <h3 className="text-start mt-3">Edit Record</h3>
             <form onSubmit={formik.handleSubmit}>
               <div className="form-group">
                 <label for="name" className="form-label mt-4">
@@ -101,7 +101,7 @@ const Add = () => {
                     className="btn btn-outline-primary rounded px-5"
                     type="submit"
                   >
-                    Save
+                    Update
                   </button>
                 </div>
               </div>
@@ -114,4 +114,4 @@ const Add = () => {
     </>
   );
 };
-export default Add;
+export default Edit;
