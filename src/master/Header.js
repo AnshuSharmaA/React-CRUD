@@ -7,7 +7,7 @@ const Header = () => {
       <nav className="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
         <div className="container-fluid">
           <Link className="navbar-brand" to="/">
-            React CURD APP
+          User Mgmt App
           </Link>
           <button
             className="navbar-toggler"
@@ -23,9 +23,15 @@ const Header = () => {
           <div className="collapse navbar-collapse" id="navbarColor01">
             <ul className="navbar-nav me-auto">
               <li className="nav-item">
-                <Link className="nav-link active" to="/">
+                <Link className="nav-link active" to="/user/dashboard">
                   Home
                   <span className="visually-hidden">(current)</span>
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link active" to="/add/user">
+                  Add User
+                 
                 </Link>
               </li>
             </ul>
