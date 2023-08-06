@@ -31,7 +31,7 @@ const Add = () => {
       <Header />
       <div className="container">
         <div className="row">
-          <h3 className="text-start mt-3 text-center">Register</h3>
+          <h3 className="text-start mt-3 text-center">Add</h3>
 
           <form onSubmit={formik.handleSubmit}>
             <div className="row">

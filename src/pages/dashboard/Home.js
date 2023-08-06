@@ -3,12 +3,15 @@ import Header from "../../master/Header";
 import Footer from "../../master/Footer";
 
 import DataTable from "react-data-table-component";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 const Home = () => {
-  const handleButtonClick = (e, id) => {
+  const handleDeleteUser = (e, id) => {
     e.preventDefault();
-   alert("User Id is "+id)
+   alert("Are you sure! want to delete this user.");
   };
+  const handleEditUser = (e,id)=>{
+    e.preventDefault();
+  }
   const columns = [
     {
       name: "Name",
@@ -45,9 +48,9 @@ const Home = () => {
       button: true,
       cell: (row) => (
         <>
-          <button onClick={(e) => handleButtonClick(e, row.id)}>Edit</button>
+          <Link to="/edit/user/" >Edit</Link>
           &nbsp;
-          <button onClick={(e) => handleButtonClick(e, row.id)}>Delete</button>
+          <button onClick={(e) => handleDeleteUser(e, row.id)}>Delete</button>
         </>
       ),
     },

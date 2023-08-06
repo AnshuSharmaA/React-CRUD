@@ -78,7 +78,7 @@ const Login = () => {
                       className="btn btn-outline-primary  col-sm-12 btn_primary"
                       type="submit"
                     >
-                      Register <i class="fas-solid fa-right-to-bracket"></i>
+                      Login <i class="fas-solid fa-right-to-bracket"></i>
                     </button>
                   </div>
                 </div>

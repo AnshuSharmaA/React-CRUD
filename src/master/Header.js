@@ -1,13 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
 const Header = () => {
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
         <div className="container-fluid">
           <Link className="navbar-brand" to="/">
-          User Mgmt App
+            User Mgmt App
           </Link>
           <button
             className="navbar-toggler"
@@ -29,9 +28,18 @@ const Header = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link active" to="/add/user">
+                <Link className="nav-link " to="/add/user">
                   Add User
-                 
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link " to="/user/profile">
+                  Profile
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link " to="/">
+                  Logout
                 </Link>
               </li>
             </ul>
@@ -41,5 +49,4 @@ const Header = () => {
     </>
   );
 };
-
 export default Header;
